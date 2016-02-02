@@ -28,14 +28,14 @@ gulp.task('task', function () {
 
 ##### url(required)
 
-Type: `string`  
+Type: `string`
 Default: `null`
 
 Give it a mongodb URI
 
 ##### filename(required)
 
-Type: `string`  
+Type: `string`
 Default: `null`
 
 New name for the file in GridFs
@@ -67,6 +67,13 @@ Type: `array`
 Default: `null`
 
 Optional array of strings to store in the file document's aliases field
+
+##### verbose
+
+Type: `boolean`
+Default: `false`
+
+Optional print file document's _id field
 
 ## License
 
