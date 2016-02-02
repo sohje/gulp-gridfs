@@ -38,9 +38,9 @@ module.exports = function(options) {
                 return;
             });
 
-            uploadStream.on('finish', function(file) {
+            uploadStream.on('finish', function(fileInfo) {
                 if (options.verbose) {
-                    gutil.log('Upload finished for', file.filename, 'and mongodb _id:', file._id);
+                    gutil.log('Upload finished for', fileInfo.filename, 'and mongodb _id:', fileInfo._id);
                 }
                 db.close();
                 cb(null, file);
