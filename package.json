@@ -1,0 +1,43 @@
+{
+  "name": "gulp-gridfs",
+  "version": "0.0.1",
+  "description": "Simple gridfs upload for gulp",
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/sohje/gulp-gridfs.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "Nikolay Spiridonov",
+    "email": "nikolay.spiridonov@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "file",
+    "files",
+    "transfer",
+    "client",
+    "protocol",
+    "server",
+    "upload",
+	"mongodb",
+	"mongo",
+	"grid",
+	"gridfs",
+	"mongod",
+    "deploy",
+    "deployment"
+  ],
+  "dependencies": {
+	"mongodb": "^2.1.0",
+    "gulp-util": "^3.0.0",
+    "object-assign": "^4.0.1",
+    "through2": "^2.0.0"
+  }
+}
