@@ -16,10 +16,11 @@ var grid = require('gulp-gridfs');
 
 gulp.task('task', function () {
     return gulp.src('src/file.txt')
-        .pipe(grid({url: 'mongodb://localhost:27017/test', filename: 'file.txt'}))
+        .pipe(grid({url: 'mongodb://localhost:27017/test'}))
 		.pipe(gulp.dest('src/'))
 });
 ```
+
 ## API
 
 ### debug(options)
