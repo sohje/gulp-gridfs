@@ -33,12 +33,12 @@ Default: `null`
 
 Give it a mongodb URI
 
-##### filename(required)
+##### filename
 
 Type: `string`
 Default: `null`
 
-New name for the file in GridFs
+Optional new name for the file in GridFs
 
 ##### chunkSizeBytes
 

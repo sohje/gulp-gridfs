@@ -1,6 +1,6 @@
 'use strict';
 var mongodb = require('mongodb');
-
+var path = require('path')
 var assign = require('object-assign');
 var through = require('through2');
 var gutil = require('gulp-util');
@@ -9,10 +9,6 @@ module.exports = function(options) {
     options = assign({verbose: false}, options);
     if (options.url === undefined) {
         throw new gutil.PluginError('gulp-gridfs', '`url` required');
-    }
-
-    if (options.filename === undefined) {
-        throw new gutil.PluginError('gulp-gridfs', '`filename` required');
     }
 
     return through.obj(function (file, enc, cb) {
@@ -30,7 +26,7 @@ module.exports = function(options) {
 
         mongodb.MongoClient.connect(options.url, function(error, db) {
             var bucket = new mongodb.GridFSBucket(db);
-            var uploadStream = bucket.openUploadStream(options.filename, args);
+            var uploadStream = bucket.openUploadStream(options.filename || path.basename(file.path), args);
 
             uploadStream.on('error', function(error) {
                 db.close();
