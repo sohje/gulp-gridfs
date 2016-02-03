@@ -78,4 +78,4 @@ Optional print file document's _id field
 
 ## License
 
-MIT © [Nikolay Spiridonov]
+MIT © [Nikolay Spiridonov](https://github.com/sohje)
