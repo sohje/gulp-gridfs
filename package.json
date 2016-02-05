@@ -1,6 +1,6 @@
 {
   "name": "gulp-gridfs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple gridfs upload for gulp",
   "license": "MIT",
   "repository": {

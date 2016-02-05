@@ -23,7 +23,7 @@ gulp.task('task', function () {
 
 ## API
 
-### debug(options)
+### gulp-gridfs(options)
 
 #### options
 
