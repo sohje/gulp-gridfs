@@ -1,4 +1,6 @@
 # gulp-gridfs
+[![npm version](https://badge.fury.io/js/gulp-gridfs.svg)](https://badge.fury.io/js/gulp-gridfs)
+
 Simple gridfs upload with gulp.
 
 ## Install
